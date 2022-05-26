@@ -1,0 +1,124 @@
+{
+    "py/object": "osdt.workspace.Workspace",
+    "_uid_": "_u_17074_t_1653573351_i_2879787567856_m_osdt_workspace_c_Workspace",
+    "ball": {
+        "py/object": "osdt.system.System",
+        "_uid_": "_u_17074_t_1653573367_i_2880651465200_m_osdt_system_c_System",
+        "_model_": {
+            "c": "ball.C",
+            "f": "ball.F",
+            "d": "ball.D",
+            "g": "ball.G",
+            "u": null,
+            "y": "ball.Y_dict"
+        },
+        "_properties_": {
+            "id": "ball",
+            "label": null
+        },
+        "_routines_": {
+            "init": null,
+            "pre": null,
+            "post": null
+        },
+        "_data_": "_u_17074_t_1653573367_i_2880651468320_m_osdt_dataset_c_Dataset",
+        "_state_": {
+            "py/object": "ball.State",
+            "y_position": 1.0205674624396248,
+            "y_velocity": 0.06924107613890951
+        },
+        "params": {
+            "py/object": "ball.Params",
+            "gravity": 9.81,
+            "restitution": 0.97
+        }
+    },
+    "sensor": {
+        "py/object": "osdt.system.System",
+        "_uid_": "_u_17074_t_1653573375_i_2880651465920_m_osdt_system_c_System",
+        "_model_": {
+            "c": "sensor.C",
+            "f": "sensor.F",
+            "d": "sensor.D",
+            "g": "sensor.G",
+            "u": "sensor.U",
+            "y": "sensor.Y"
+        },
+        "_properties_": {
+            "id": "sensor",
+            "label": null
+        },
+        "_routines_": {
+            "init": null,
+            "pre": null,
+            "post": null
+        },
+        "_data_": "_u_17074_t_1653573375_i_2880651468512_m_osdt_dataset_c_Dataset",
+        "_state_": {
+            "py/object": "sensor.State",
+            "value": 0.0,
+            "timer": 0.0
+        },
+        "initialize": null,
+        "routine": null,
+        "params": {
+            "py/object": "sensor.Params",
+            "sample_period": 0.1,
+            "sample_field": "y_position"
+        },
+        "connector": {
+            "py/object": "sensor.Connector",
+            "input": {
+                "py/id": 1
+            }
+        }
+    },
+    "fig": {
+        "py/object": "osdt.plotting.Figure2",
+        "_uid_": "_u_17074_t_1653573414_i_2880651465104_m_osdt_plotting_c_Figure2",
+        "figure": {
+            "width": 800,
+            "height": 600,
+            "layout": [
+                [
+                    1
+                ]
+            ],
+            "title": null,
+            "style": null,
+            "autofit": true,
+            "title_align": false,
+            "dpi": 100.0,
+            "pad_w": 1.08,
+            "pad_h": 1.08
+        },
+        "series": {
+            "1": [
+                {
+                    "py/object": "osdt.plotting.Series2",
+                    "y": "y_position",
+                    "x": null,
+                    "system": null,
+                    "label": null,
+                    "color": null,
+                    "dash_style": null,
+                    "field_label": false,
+                    "max_points": null
+                },
+                {
+                    "py/object": "osdt.plotting.Series2",
+                    "y": "value",
+                    "x": null,
+                    "system": null,
+                    "label": null,
+                    "color": null,
+                    "dash_style": null,
+                    "field_label": false,
+                    "max_points": null
+                }
+            ]
+        },
+        "subplots": {}
+    },
+    "_data_": {}
+}
