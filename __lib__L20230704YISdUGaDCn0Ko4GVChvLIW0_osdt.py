@@ -2,7 +2,7 @@
 
 Use the id below to reference this library:
 
-L20230704YISdUGaDCn0Ko4GVChvLIW0
+DTL20230704YISdUGaDCn0Ko4GVChvLI
 
 ===============================================================================
 
@@ -11,7 +11,7 @@ library could be included as a dependency in another library as follows:
 
 -------------------------------------------------------------------------------
 import osdt
-library = osdt.lib(id='L20230704YISdUGaDCn0Ko4GVChvLIW0')
+library = osdt.lib(id='DTL20230704YISdUGaDCn0Ko4GVChvLI')
 -------------------------------------------------------------------------------
 
 Modules can then be imported from this library using the 'lib' prefix with 
